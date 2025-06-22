@@ -16,7 +16,7 @@
         import { mount } from "https://cdn.jsdelivr.net/npm/@stlite/browser@0.83.0/build/stlite.js";
         function init() {
             console.log("init");
-            const baseUrl = `${window.location.protocol}//${window.location.host}`;
+            const baseUrl = `${window.location}`;
             fetch(`${baseUrl}/app.py`).then(res => res.text()).then(
                 (app) => mount(
                     {
